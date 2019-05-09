@@ -1,14 +1,16 @@
 # vue-search-AllChecked
 
 
-## 演示地址
+## 演示地址，打开啊、搜索啊、随便点啊
 <http://msisliao.github.io/demo/dist/index.html#/>
+
+### 懒得点地址，gif已在来的路上~~
+![gif](https://raw.githubusercontent.com/msisliao/vue-search-AllChecked/master/static/aa.gif)
 
 
 - 安装vue-cli 
 - 安装elementUI `npm i element-ui -S`
 - 在main.js 引入elementUI
-
 
 
 ```javascript
@@ -18,7 +20,10 @@ Vue.use(ElementUI)
 ```
 
 ## demo功能概览
-> 默认没有全选，搜索时支持全选与取消全选，将选择的数据添加到已选中，已选删除时改变当前搜索列表的状态与全选按钮的状态，全选时全部追加到已选，取消全选时从已选中删除当前搜索的列表
+
+> * 默认没有全选，搜索时支持全选与取消全选，
+> * 将选择的数据添加到已选中，已选删除时改变当前搜索列表的状态与全选按钮的状态
+> * 全选时全部追加到已选，取消全选时从已选中删除当前搜索的列表
 
 
 ## 功能列表
