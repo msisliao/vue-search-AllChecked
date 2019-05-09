@@ -17,24 +17,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 ```
 
+## demo功能概览
+> 默认没有全选，搜索时支持全选与取消全选，将选择的数据添加到已选中，已选删除时改变当前搜索列表的状态与全选按钮的状态，全选时全部追加到已选，取消全选时从已选中删除当前搜索的列表
+
 
 ## 功能列表
 
-1、搜索的下拉菜单去重
-
-```javascript
-    filDatas() {
-      // 利用reduce 下拉菜单去重
-      var obj = {};
-      return this.listItem.list.reduce(function(item, next) {
-        obj[next.BrandNames] ? "" : (obj[next.BrandNames] = true && item.push(next));
-        return item;
-      }, []);
-    }
-
-```
-
-2、搜索时展示相应的数据列表，支持全选与取消全选，
+1、搜索时展示相应的数据列表，支持全选与取消全选，（默认展示所有数据时不支持全选）
 
 ```javascript
     datas() {
@@ -48,6 +37,22 @@ Vue.use(ElementUI)
       }
     },
 ```
+
+2、搜索的下拉菜单去重
+
+```javascript
+    filDatas() {
+      // 利用reduce 下拉菜单去重
+      var obj = {};
+      return this.listItem.list.reduce(function(item, next) {
+        obj[next.BrandNames] ? "" : (obj[next.BrandNames] = true && item.push(next));
+        return item;
+      }, []);
+    }
+
+```
+
+
 
 3、当前界面全选时添加到已选中，当前界面取消全选时，从已选的数据删除当前搜索出来的列表数据，
 
