@@ -1,8 +1,4 @@
-## 演示地址，打开啊、搜索啊、随便点啊
-<http://msisliao.github.io/demo/dist/index.html#/>
-
-### 懒得点地址，gif已在来的路上~~[额😓，体积有点庞大，建议还是看demo吧]
-![gif](https://raw.githubusercontent.com/msisliao/vue-search-AllChecked/master/static/aa.gif)
+### 搜索结果支持全选与取消全选，打开、搜索、随便点
 
 
 - 安装vue-cli 
@@ -15,6 +11,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 ```
+
+**demo** <http://msisliao.github.io/demo/dist/index.html#/>
+
+
 
 ## demo功能概览
 
